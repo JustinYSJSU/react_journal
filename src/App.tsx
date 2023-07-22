@@ -20,6 +20,7 @@ function App(){
           <Route path = "/viewEntries" element = {<ViewEntry />} />
           <Route path = "/about" element = {<About />} />
           <Route path = "/entry/:id/:docID" element = {<ReviewEntry />} />
+          <Route path = "*" element={<h1> Page not available </h1>} />
         </Routes>
       </Router>
     </div>
