@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100% - 250px);
+    margin-right: 40px;
+  }
+  
+  .entry {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width as per your layout */
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+  }

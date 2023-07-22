@@ -1,0 +1,10 @@
+#entry-card {
+    width: 500px;
+    margin-left: 400px; /* Adjust the margin-left value to position the card horizontally */
+    margin-top: 50px; /* Adjust the margin-top value to move the card down */
+    text-align: center;
+  }
+
+  #delete-entry{
+    margin-top: 40px;
+  }
