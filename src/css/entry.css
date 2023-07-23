@@ -1,10 +1,65 @@
-input{
+/* Default styles for all screen sizes */
+input, textarea {
     margin-top: 20px;
     text-align: center;
-}
-
-#save-button{
+    width: 100%; /* Set the width of the input and textarea to fill their parent container */
+  }
+  
+  #save-button {
     margin-bottom: 35px;
-}
-
+  }
+  
+  form {
+    max-width: 500px; /* Set a maximum width for the form to prevent it from stretching too wide */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  /* Adjust styles for form title */
+  h1 {
+    font-size: 24px; /* Set the font size for the form title */
+  }
+  
+  /* Adjust styles for the save button */
+  #save-button {
+    font-size: 16px; /* Set the font size for the save button */
+  }
+  
+  /* Media query for screens with a width of 1024 pixels or more (e.g., desktops and larger screens) */
+  @media (min-width: 1024px) {
+    /* Adjust styles for larger screens */
+    form {
+      max-width: 400px; /* Increase the maximum width of the form for larger screens */
+    }
+  
+    /* Adjust styles for form title on larger screens */
+    h1 {
+      font-size: 28px; /* Increase the font size for the form title on larger screens */
+    }
+  
+    /* Adjust styles for the save button on larger screens */
+    #save-button {
+      font-size: 18px; /* Increase the font size for the save button on larger screens */
+    }
+  }
+  
+  /* You can add more media queries as needed for other screen sizes */
+  
+  /* Additional styles for very large screens (e.g., wide monitors) */
+  @media (min-width: 1440px) {
+    form {
+      max-width: 1000px;
+    }
+  
+    /* Additional styles for form title on very large screens */
+    h1 {
+      font-size: 32px;
+    }
+  
+    /* Additional styles for the save button on very large screens */
+    #save-button {
+      font-size: 20px;
+    }
+  }
+  
+  
 

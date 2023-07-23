@@ -1,11 +1,19 @@
-#about-info{
+#about-info {
     text-align: center;
     color: black;
 }
 
-#info-card{
-    width: 500px;
-    margin-left: 375px;
-    margin-bottom: 20px;
+#info-card {
+    max-width: 500px;
+    margin: 0 auto 20px; /* Center the card horizontally and add some margin at the bottom */
     text-align: center;
+}
+
+/* Media query for screens with a width of 768 pixels or less (e.g., tablets and smartphones) */
+@media (max-width: 768px) {
+    #info-card {
+        max-width: 90%; /* Reduce the card's width on smaller screens */
+        margin-left: auto; /* Remove left margin to center the card */
+        margin-right: auto; /* Remove right margin to center the card */
+    }
 }

@@ -20,12 +20,12 @@ export const ReviewEntry = () => {
     const [user, loading, error] = useAuthState(auth)
     const [entries, setEntries] = useState<Entry[]>([]);
 
-    const onDeleteEntry = async (docID: string) =>{
+    const onDeleteEntry = async (docID: string) => {
 
-       const docRef = doc(db, "entries", realID) //HOW TO GET DOCUMENT ID
-       await deleteDoc(docRef)
-       alert("Entry deleted. Returning to home.")
-       navigate("/home")
+        const docRef = doc(db, "entries", realID) //HOW TO GET DOCUMENT ID
+        await deleteDoc(docRef)
+        alert("Entry deleted. Returning to home.")
+        navigate("/home")
     }
 
     useEffect(() => {
@@ -62,7 +62,7 @@ export const ReviewEntry = () => {
             {entries.length === 0 ? (
                 <p>Loading...</p>
             ) : (
-                <div>
+                <div className="center-content"> {/* Added center-content class */}
                     <div id="about-info">
                         <h1 className="display-1"> Entry Viewing</h1>
                     </div>
@@ -80,10 +80,10 @@ export const ReviewEntry = () => {
                         </div>
                     </div>
 
-                    <button className = "btn btn-danger" id = "delete-entry"
-                    onClick = {() => {onDeleteEntry(entries[0].docID)}}> Delete Entry</button>
+                    <button className="btn btn-danger" id="delete-entry" onClick={() => { onDeleteEntry(entries[0].docID) }}>Delete Entry</button>
                 </div>
             )}
         </div>
+
     )
 }

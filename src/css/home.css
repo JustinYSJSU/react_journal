@@ -1,4 +1,24 @@
-#home-info{
-     text-align: center;
-     color: black;
- }
+/* Default styles for all screen sizes */
+#home-info {
+    text-align: center;
+    color: black;
+    overflow-wrap: normal;
+  }
+  
+/* Media query for screens with a width of 768 pixels or less (e.g., smartphones) */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    #home-info {
+      font-size: 16px; /* Example of changing font size for smaller screens */
+    }
+  }
+  
+  /* Media query for screens with a width of 992 pixels or less (e.g., tablets) */
+  @media (max-width: 992px) {
+    /* Additional styles for medium-sized screens */
+  }
+  
+  /* Media query for screens with a width of 1200 pixels or less (e.g., laptops) */
+  @media (max-width: 1200px) {
+    /* Additional styles for larger screens */
+  }

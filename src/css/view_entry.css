@@ -1,13 +1,22 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: calc(100% - 250px);
-    margin-right: 40px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute items evenly with space between them */
+  max-width: calc(100% - 250px);
+  margin-right: 40px;
+}
+
+.entry {
+  flex: 0 0 calc(50% - 20px); /* Adjust the width as per your layout */
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Media query for screens with a width of 768 pixels or less (e.g., tablets and smartphones) */
+@media (max-width: 768px) {
   .entry {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust the width as per your layout */
-    margin: 10px;
-    border: 1px solid black;
-    padding: 10px;
+      flex: 0 0 100%; /* Set the width to 100% to make entries stack vertically */
+      max-width: calc(100% - 20px); /* Adjust the maximum width of the entries */
   }
+}
