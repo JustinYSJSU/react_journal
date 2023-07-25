@@ -39,6 +39,7 @@ export const About = () => {
               <p> JOURNAL was created by Justin Yamamoto, who is studying Software Engineering
                 at San Jose State University. He will be graduating in the Spring of 2024. 
               </p>
+              <p> <a href = "https://github.com/JustinYSJSU/react_journal"> Project Github </a></p>
 
               <p> In his free time, he enjoys listening to music, reading, and playing VALORANT / golf.</p>
 
