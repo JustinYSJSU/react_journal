@@ -9,7 +9,7 @@
 - ReactJS
 - Typescript / JSX
 - CSS
-- Google Firebase 
+- Google Firebase / Firestore
 - Vercel 
 
 ## Using JOURNAL 
