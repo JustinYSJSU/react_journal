@@ -13,7 +13,7 @@ JOURNAL uses Google Firebase / Firestore for its authentication and database sto
 - Vercel 
 
 ## Using JOURNAL 
-JOURNAL can be accessed with [this link] (https://react-journal-kohl.vercel.app/). You will need a google account to login and save your entries. 
+JOURNAL can be accessed with [this link](https://react-journal-kohl.vercel.app/). You will need a google account to login and save your entries. 
 After logging in, follow the directions show on the home page. 
 
 ## Credits
