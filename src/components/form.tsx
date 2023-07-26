@@ -15,7 +15,7 @@ interface CreateFormData {
 export const Form = () => {
     const navigate = useNavigate()
     const [user] = useAuthState(auth)
-    
+
     const schema = yup.object().shape({
         title: yup.string().required("You must have a title"),
         entry: yup.string().required("You must write something")
@@ -48,11 +48,14 @@ export const Form = () => {
 
     return (
         <form onSubmit={handleSubmit(onCreateEntry)}>
-            <input placeholder="Title"{...register("title")} />
-            <p style={{ color: "red" }}>{errors.title?.message}</p>
-            <textarea placeholder="How are you today?" {...register("entry")} style={style} />
-            <p style={{ color: "red" }}>{errors.entry?.message}</p>
-            <input type="submit" value={"Save"} className="btn btn-success" id = "save-button" />
+            <div className="container-three">
+                <input placeholder="Title"{...register("title")} />
+                <p style={{ color: "red" }}>{errors.title?.message}</p>
+                <textarea placeholder="How are you today?" {...register("entry")} style={style} />
+                <p style={{ color: "red" }}>{errors.entry?.message}</p>
+                <input type="submit" value={"Save"} className="btn btn-success" id="save-button" />
+            </div>
+
         </form>
     )
 }
