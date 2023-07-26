@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import { Entry } from "../components/entry";
 import "../css/view_entry.css"
 import { Link } from "react-router-dom";
+import { Header } from "../components/header";
 
 export interface Entry {
     id: string;
@@ -57,8 +58,8 @@ export const ViewEntry = () => {
     entries.sort( (a,b) => b.timestamp.toMillis() - a.timestamp.toMillis()) //sort from newest to oldest
     console.log(entries)
     return (
-        <div>
-            <Sidebar />
+        <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <Header />
             <div className="container-two">
                {entries.map( (entry) => {
                 return(

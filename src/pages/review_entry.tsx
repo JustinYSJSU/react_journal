@@ -7,6 +7,7 @@ import { collection, query, where, getDocs, doc, Timestamp, deleteDoc } from "fi
 import { Entry } from "./view_entry"
 import "../css/review_entry.css"
 import { useNavigate } from "react-router-dom"
+import { Header } from "../components/header"
 
 export const ReviewEntry = () => {
     const { id } = useParams()
@@ -57,8 +58,8 @@ export const ReviewEntry = () => {
     }, [loading, user]);
     console.log(entries)
     return (
-        <div>
-            <Sidebar />
+        <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <Header />
             {entries.length === 0 ? (
                 <p>Loading...</p>
             ) : (

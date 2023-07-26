@@ -2,6 +2,7 @@ import { Sidebar } from "../components/sidebar"
 import "../css/about.css"
 import { auth } from "../config/firebase"
 import { useAuthState } from "react-firebase-hooks/auth"
+import { Header } from "../components/header"
 
 export const About = () => {
   const [user, loading] = useAuthState(auth)
@@ -10,8 +11,8 @@ export const About = () => {
 
 
   return (
-    <div>
-      <Sidebar />
+    <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <Header />
 
       <div id="about-info">
         <h1 className="display-1"> About JOURNAL</h1>
