@@ -1,4 +1,3 @@
-import { Sidebar } from "../components/sidebar"
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { useAuthState } from "react-firebase-hooks/auth"

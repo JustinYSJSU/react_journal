@@ -1,4 +1,3 @@
-import { Sidebar } from "../components/sidebar"
 import "../css/home.css"
 import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from "../config/firebase"
