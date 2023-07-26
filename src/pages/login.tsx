@@ -20,7 +20,7 @@ export const Main = () => {
         </div>
         <div className=" box-2 d-flex flex-column h-100">
           <div className="mt-5">
-            <p className="mb-1 h-1"> Welcome to JOURNAL .</p>
+            <p className="mb-1 h-1"> Welcome to Journal .</p>
             <p className="text-muted mb-2">Share your thouhts today.</p>
             <div className="d-flex flex-column ">
               <p className="text-muted mb-2">Continue with...</p>

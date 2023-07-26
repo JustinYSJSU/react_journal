@@ -4,6 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from "../config/firebase"
 import { Header
  } from "../components/header"
+
 export const Home = () => {
   const [user, loading] = useAuthState(auth)
   loading && console.log("loading")
@@ -23,7 +24,5 @@ export const Home = () => {
         <p> React Project by <a href="https://github.com/JustinYSJSU" className="text-black"> @JustinYSJSU </a>.</p>
       </footer>
     </div>
-
-
   )
 }

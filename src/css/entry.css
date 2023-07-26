@@ -1,14 +1,28 @@
 /* Default styles for all screen sizes */
-input, textarea {
+ textarea {
     margin-top: 20px;
     text-align: center;
     max-width: 1000px; /* Set the width of the input and textarea to fill their parent container */
     border-radius: 25px;
+    justify-content: center;
   }
   
+  input{
+    justify-content: center;
+    text-align: center;
+    max-width: 1000px; /* Set the width of the input and textarea to fill their parent container */
+    border-radius: 25px;
+    margin-top: 60px;
+    margin-left: 102px;
+  }
+
+
+
   #save-button {
-    margin-bottom: 35px;
+    margin-bottom: 100px;
     max-width: 100px;
+    justify-content: center;
+    margin-right: 115px;
   }
   
   form {
