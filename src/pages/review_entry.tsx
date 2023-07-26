@@ -65,7 +65,7 @@ export const ReviewEntry = () => {
             ) : (
                 <div className="center-content"> {/* Added center-content class */}
                     <div id="about-info">
-                        <h1 className="display-1"> Entry Viewing</h1>
+                        <h1 className="display-3"> Viewing Entry </h1>
                     </div>
 
                     <div className="card" id="entry-card">
