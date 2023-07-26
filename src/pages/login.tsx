@@ -13,24 +13,26 @@ export const Main = () => {
   }
 
   return (
-    <div id = "login-con">
-      <div className="d-flex justify-content-center h-100">
-        <div className="card" id = "login-card">
-          <div className="card-header">
-            <h3>Welcome to JOURNAL</h3>
-            <h5> A Google account is required</h5>
+    <div className="container">
+      <div className="body d-md-flex align-items-center justify-content-between">
+        <div className="box-1 mt-md-0 mt-5">
+          <img src="https://images.pexels.com/photos/2033997/pexels-photo-2033997.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+        </div>
+        <div className=" box-2 d-flex flex-column h-100">
+          <div className="mt-5">
+            <p className="mb-1 h-1"> Welcome to JOURNAL .</p>
+            <p className="text-muted mb-2">Share your thouhts today.</p>
+            <div className="d-flex flex-column ">
+              <p className="text-muted mb-2">Continue with...</p>
+              <div className="align-items-center">
+                  <button className = "btn btn-secondary" onClick={signInWithGoogle}> Google </button>
+              </div>
+            </div>
           </div>
-
-          <div className="card-body">
-            <h3> With JOURNAL, you can write your thoughts securely and freely </h3>
-            <h3> To get started, sign in with your Google account</h3>
-          </div>
-
-          <div className="card-footer">
-            <button className = "btn btn-primary" onClick = {signInWithGoogle}> Sign in with Google</button>
-          </div> 				
+        </div>
+        <span className="fas fa-times" />
       </div>
     </div>
-  </div>
+
   )
 }
