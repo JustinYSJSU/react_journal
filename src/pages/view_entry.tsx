@@ -59,14 +59,13 @@ export const ViewEntry = () => {
     return (
         <div>
             <Sidebar />
-            <div className = "container">
+            <div className="container-two">
                {entries.map( (entry) => {
                 return(
-                <div className = "entry">
+                <div className="entry">
                   <Link to= {`/entry/${entry.id}/${entry.docID}`}>
                     <a className = "btn btn-success" > View "{entry.title}" </a>
                   </Link>
-                  
                 </div> 
                 )
                })}

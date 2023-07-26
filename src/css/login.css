@@ -3,7 +3,6 @@ html,body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    font-family: 'Numans', sans-serif;
 }
     
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -71,14 +70,6 @@ html,body{
     color: #615f5fdd;
 }
 
-.box:active,
-.box:visited {
-    border: 2px solid #ee82ee;
-}
-
-.box:hover {
-    border: 2px solid #ee82ee;
-}
 
 .btn.btn-primary {
     background-color: transparent;
@@ -90,10 +81,6 @@ html,body{
 
 .btn.btn-primary .fas.fa-chevron-right {
     font-size: 12px;
-}
-
-.footer .p-color {
-    color: #ee82ee;
 }
 
 .footer.text-muted {
