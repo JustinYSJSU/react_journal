@@ -29,6 +29,8 @@ export const Main = () => {
               </div>
             </div>
           </div>
+
+          <p className="after-text"> With a Google account, you can create, save, and view entries.</p>
         </div>
         <span className="fas fa-times" />
       </div>
