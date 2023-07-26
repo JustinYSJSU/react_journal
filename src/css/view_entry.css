@@ -3,8 +3,8 @@
   flex-wrap: wrap;
   justify-content: space-between; /* Distribute items evenly with space between them */
   max-width: calc(100% - 250px);
-  margin-right: 40px;
-  margin-left: 225px;
+  margin: 10px auto;
+  
 }
 
 .entry {
