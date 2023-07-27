@@ -17,6 +17,13 @@
   width: 300px;
 }
 
+.no-entries.btn.btn-secondary{
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Media query for screens with a width of 768 pixels or less (e.g., tablets and smartphones) */
 @media (max-width: 768px) {
   .entry {

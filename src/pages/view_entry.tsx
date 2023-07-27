@@ -41,7 +41,6 @@ export const ViewEntry = () => {
                         console.log("ADDED")
                     });
                     setEntries(entriesData);
-
                 })
                 .catch((error) => {
                     console.log('Error fetching entries:', error);
@@ -53,6 +52,17 @@ export const ViewEntry = () => {
             console.log(loading)
         }
     }, [loading, user]);
+    
+    if(entries.length === 0)
+    {
+        return(
+            <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+              <Header />
+               <a href="/newEntry"> <button className="no-entries btn btn-secondary"> You have no entries!
+               Click here to write one. </button></a>
+            </div>
+        )
+    }
 
     entries.sort( (a,b) => b.timestamp.toMillis() - a.timestamp.toMillis()) //sort from newest to oldest
     console.log(entries)
