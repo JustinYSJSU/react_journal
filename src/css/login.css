@@ -90,23 +90,6 @@ html,body{
     font-size: 10px;
 }
 
-.fas.fa-times {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 20px;
-    width: 20px;
-    background-color: #f3cff379;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.fas.fa-times:hover {
-    color: #ff0000;
-}
-
 @media (max-width:767px) {
     body {
         padding: 10px;
