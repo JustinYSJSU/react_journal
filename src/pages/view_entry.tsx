@@ -74,7 +74,7 @@ export const ViewEntry = () => {
                 return(
                 <div className="entry">
                   <Link to= {`/entry/${entry.id}/${entry.docID}`}>
-                    <a className = "btn btn-success" > View "{entry.title}" </a>
+                    <a className = "btn btn-success" > {entry.timestamp.toDate().toDateString()}:  "{entry.title}"" </a>
                   </Link>
                 </div> 
                 )
