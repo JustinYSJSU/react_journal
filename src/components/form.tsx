@@ -53,7 +53,7 @@ export const Form = () => {
             <div className="container-three">
                 <input placeholder="Title"{...register("title")} />
                 <p style={{ color: "red" }}>{errors.title?.message}</p>
-                <textarea placeholder="How are you today?" {...register("entry")} style={style} />
+                <textarea className="text" placeholder="How are you today?" {...register("entry")} style={style} />
                 <p style={{ color: "red" }}>{errors.entry?.message}</p>
                 <input type="submit" value={"Save"} className="btn btn-success" id="save-button" />
             </div>

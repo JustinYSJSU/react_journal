@@ -12,14 +12,18 @@
   margin-top: 25px;
 }
 
-textarea,
 input {
   max-width: 1000px;
   /* Set the width of the input and textarea to fill their parent container */
   border-radius: 25px;
   text-align: center;
+}
+
+textarea{
   padding-left: 20px;
   padding-right: 20px;
+  text-align: left;
+  border-radius: 25px;
 }
 
 form {
