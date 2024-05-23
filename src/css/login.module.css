@@ -6,7 +6,7 @@ body {
     padding: 0;
   }
   
-  .container {
+  .login-container {
     display: flex;
     justify-content: center;
     align-items: center;

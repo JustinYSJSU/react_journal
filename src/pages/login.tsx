@@ -1,7 +1,7 @@
 import { auth, provider } from "../config/firebase"
 import { signInWithPopup } from "firebase/auth"
 import { useNavigate } from "react-router-dom"
-import "../css/login.css"
+import LoginCSS from "../css/login.module.css"
 
 export const Main = () => {
   const navigate = useNavigate()
@@ -13,7 +13,7 @@ export const Main = () => {
   }
 
   return (
-    <div className="container">
+    <div className={LoginCSS['login-container']}>
       <div className="body d-md-flex align-items-center justify-content-between">
         <div className="box-1 mt-md-0 mt-5">
           <img src="https://images.pexels.com/photos/2033997/pexels-photo-2033997.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
