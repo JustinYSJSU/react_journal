@@ -1,9 +1,31 @@
+/* Add a warm color palette */
+:root {
+  --background-color: #f7e8d5;
+  --primary-color: #d17b47;
+  --secondary-color: #f3c6a5;
+  --text-color: #4a2e2a;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Apply the background color to the body */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Georgia', serif;
+}
+
+/* Style the placeholder images */
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  padding: 10px;
 }
 
 @media (min-width: 768px) {
@@ -12,7 +34,29 @@
   }
 }
 
-.px-3{
+/* Center and add spacing to elements with the px-3 class */
+.px-3 {
   margin-top: 100px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Additional cozy styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--secondary-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+p {
+  line-height: 1.6;
 }
