@@ -12,10 +12,10 @@ export const Header = () => {
         navigate("/")
     }
     return (
-        <header className="mb-auto">
+        <header>
             <div>
-                <h3 className="float-md-start mb-0"> Journal </h3>
-                <nav className="nav nav-masthead justify-content-center float-md-end">
+                <h3> Journal </h3>
+                <nav>
                     <a className="nav-link active" aria-current="page" href="/home">Home</a>
                     <a className="nav-link" href="/newEntry"> New Entry </a>
                     <a className="nav-link" href="/viewEntries"> View Entries </a>

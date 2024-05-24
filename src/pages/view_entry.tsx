@@ -67,12 +67,12 @@ export const ViewEntry = () => {
     entries.sort( (a,b) => b.timestamp.toMillis() - a.timestamp.toMillis()) //sort from newest to oldest
     console.log(entries)
     return (
-        <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <div>
             <Header />
-            <div className="container-two">
+            <div>
                {entries.map( (entry) => {
                 return(
-                <div className="entry">
+                <div>
                   <Link to= {`/entry/${entry.id}/${entry.docID}`}>
                     <a className = "btn btn-success" > {entry.timestamp.toDate().toDateString()}:  "{entry.title}"" </a>
                   </Link>

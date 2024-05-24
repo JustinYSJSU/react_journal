@@ -10,19 +10,19 @@ export const About = () => {
 
 
   return (
-    <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div>
       <Header />
 
-      <div id="about-info">
-        <h1 className="display-1"> About Journal</h1>
+      <div>
+        <h1> About Journal</h1>
       </div> 
 
-      <div className="card" id = "info-card">
-          <div className="card-header">
+      <div>
+          <div>
             Why Journal?
           </div>
-          <div className="card-body">
-            <blockquote className="blockquote mb-0">
+          <div>
+            <blockquote>
               <p>Journal was created with the purpose of learning React, CSS and Google Firebase 
                 while also providing users with a place to write their thoughts. 
               </p>
@@ -32,12 +32,12 @@ export const About = () => {
           </div>
        </div>
 
-        <div className="card" id = "info-card">
-          <div className="card-header">
+        <div>
+          <div>
             Creator
           </div>
-          <div className="card-body">
-            <blockquote className="blockquote mb-0">
+          <div>
+            <blockquote>
               <p> Journal was created by Justin Yamamoto, who is studying Software Engineering
                 at San Jose State University. He will be graduating in the Spring of 2024. 
               </p>

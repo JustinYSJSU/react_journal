@@ -10,17 +10,17 @@ export const Home = () => {
   user && console.log(`Logged in as  ${user?.displayName}`)
 
   return (
-    <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div>
       <Header />
-      <main className="px-3">
+      <main>
         <h1> Welcome to Journal.</h1>
-        <p className="lead"> Journal allows you to write and save your own private entries.</p>
-        <p className="lead">
-          <a href="/newEntry" className="btn btn-lg btn-secondary fw-bold"> Get started </a>
+        <p> Journal allows you to write and save your own private entries.</p>
+        <p>
+          <a href="/newEntry"> Get started </a>
         </p>
       </main>
-      <footer className="mt-auto">
-        <p> React Project by <a href="https://github.com/JustinYSJSU" className="text-black"> @JustinYSJSU </a>.</p>
+      <footer>
+        <p> React Project by <a href="https://github.com/JustinYSJSU"> @JustinYSJSU </a>.</p>
       </footer>
     </div>
   )

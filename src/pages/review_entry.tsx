@@ -57,30 +57,30 @@ export const ReviewEntry = () => {
     }, [loading, user]);
     console.log(entries)
     return (
-        <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <div>
             <Header />
             {entries.length === 0 ? (
                 <p>Loading...</p>
             ) : (
-                <div className="center-content"> {/* Added center-content class */}
-                    <div id="about-info">
-                        <h1 className="display-3"> Viewing Entry </h1>
+                <div> {/* Added center-content class */}
+                    <div>
+                        <h1> Viewing Entry </h1>
                     </div>
 
-                    <div className="card" id="entry-card">
-                        <div className="card-header">
+                    <div>
+                        <div>
                             {entries[0].title}
                             <p></p>
                             ({entries[0].timestamp.toDate().toDateString()})
                         </div>
-                        <div className="card-body">
-                            <blockquote className="blockquote mb-0">
+                        <div>
+                            <blockquote>
                                 {entries[0].text}
                             </blockquote>
                         </div>
                     </div>
 
-                    <button className="btn btn-danger" id="delete-entry" onClick={() => { onDeleteEntry(entries[0].docID) }}>Delete Entry</button>
+                    <button onClick={() => { onDeleteEntry(entries[0].docID) }}>Delete Entry</button>
                 </div>
             )}
         </div>

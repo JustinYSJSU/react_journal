@@ -50,7 +50,7 @@ export const Form = () => {
 
     return (
         <form onSubmit={handleSubmit(onCreateEntry)}>
-            <div className="container-three">
+            <div>
                 <input placeholder="Title"{...register("title")} />
                 <p style={{ color: "red" }}>{errors.title?.message}</p>
                 <textarea className="text" placeholder="Write here..."{...register("entry")} style={style} />

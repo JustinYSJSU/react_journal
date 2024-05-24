@@ -14,25 +14,25 @@ export const Main = () => {
 
   return (
     <div className={LoginCSS['login-container']}>
-      <div className="body d-md-flex align-items-center justify-content-between">
-        <div className="box-1 mt-md-0 mt-5">
+      <div>
+        <div>
           <img src="https://images.pexels.com/photos/2033997/pexels-photo-2033997.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
         </div>
-        <div className=" box-2 d-flex flex-column h-100">
-          <div className="mt-5">
-            <p className="mb-1 h-1"> Welcome to Journal .</p>
-            <p className="text-muted mb-2">Share your thouhts today.</p>
-            <div className="d-flex flex-column ">
-              <p className="text-muted mb-2">Continue with...</p>
-              <div className="align-items-center">
-                  <button className = "btn btn-secondary" onClick={signInWithGoogle}> Google </button>
+        <div>
+          <div>
+            <p> Welcome to Journal .</p>
+            <p>Share your thouhts today.</p>
+            <div>
+              <p>Continue with...</p>
+              <div>
+                  <button onClick={signInWithGoogle}> Google </button>
               </div>
             </div>
           </div>
 
-          <p className="after-text"> With a Google account, you can create, save, and view entries.</p>
+          <p> With a Google account, you can create, save, and view entries.</p>
         </div>
-        <span className="fas fa-times" />
+        <span/>
       </div>
     </div>
 
