@@ -1,62 +1,63 @@
-/* Add a warm color palette */
-:root {
-  --background-color: #f7e8d5;
-  --primary-color: #d17b47;
-  --secondary-color: #f3c6a5;
-  --text-color: #4a2e2a;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-}
-
-/* Apply the background color to the body */
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: 'Georgia', serif;
-}
-
-/* Style the placeholder images */
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  background: var(--secondary-color);
-  color: var(--text-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px var(--shadow-color);
-  padding: 10px;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
-/* Center and add spacing to elements with the px-3 class */
-.px-3 {
-  margin-top: 100px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f7f1e3;
+  color: #4b3832;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  height: 100vh;
 }
 
-/* Additional cozy styling */
-.container {
+.cover-container {
+  background-color: #fff5e1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
   padding: 20px;
-  background: var(--secondary-color);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px var(--shadow-color);
+  text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #4b3832;
 }
 
-p {
-  line-height: 1.6;
+.lead {
+  font-size: 1.2em;
+  color: #6d6875;
+  margin-bottom: 20px;
 }
+
+.btn-secondary {
+  background-color: #ffbe76;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #ff9f43;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 20px;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #4b3832;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
