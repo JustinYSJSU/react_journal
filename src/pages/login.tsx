@@ -13,10 +13,8 @@ export const Main = () => {
   }
 
   return (
-    <div className="login-container">
-      <div>
-        <div>
-          <div>
+    <div>
+          <div className="login-container">
             <p> Welcome to Journal .</p>
             <p>Share your thouhts today.</p>
             <div>
@@ -26,11 +24,7 @@ export const Main = () => {
               </div>
             </div>
           </div>
-
-          <p> With a Google account, you can create, save, and view entries.</p>
-        </div>
-        <span/>
-      </div>
+          <p> With a Google account, you can create, save, and view entries.</p>     
     </div>
 
   )
