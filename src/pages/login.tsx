@@ -14,7 +14,7 @@ export const Main = () => {
 
   return (
     <div>
-          <div className="login-container">
+          <div>
             <p> Welcome to Journal .</p>
             <p>Share your thouhts today.</p>
             <div>
