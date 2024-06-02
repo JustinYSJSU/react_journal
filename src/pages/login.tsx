@@ -13,19 +13,20 @@ export const Main = () => {
   }
 
   return (
-    <div>
-          <div>
-            <p> Welcome to Journal .</p>
-            <p>Share your thouhts today.</p>
-            <div>
-              <p>Continue with...</p>
-              <div>
-                  <button onClick={signInWithGoogle}> Google </button>
-              </div>
-            </div>
-          </div>
-          <p> With a Google account, you can create, save, and view entries.</p>     
+    <div className="container">
+  <div className="welcome-box">
+    <p className="welcome-text">Welcome to Journal.</p>
+    <p className="subtitle">Share your thoughts today.</p>
+    <div className="continue-box">
+      <p className="continue-text">Continue with...</p>
+      <div className="button-container">
+        <button className="google-button" onClick={signInWithGoogle}>Google</button>
+      </div>
     </div>
+  </div>
+  <p className="info-text">With a Google account, you can create, save, and view entries.</p>     
+</div>
+
 
   )
 }
