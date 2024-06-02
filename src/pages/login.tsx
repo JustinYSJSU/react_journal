@@ -13,7 +13,7 @@ export const Main = () => {
   }
 
   return (
-    <div>
+    <div className="login-container">
       <div>
         <div>
           <div>
