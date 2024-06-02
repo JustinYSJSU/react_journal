@@ -1,69 +1,84 @@
+/* General styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf7f3;
+  color: #4a4a4a;
+}
+
+/* Container styling */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background-color: #fff3e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: auto;
 }
 
+/* Welcome box styling */
 .welcome-box {
   text-align: center;
   margin-bottom: 20px;
 }
 
 .welcome-text {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
-  color: #333;
+  color: #d2691e;
   margin-bottom: 10px;
 }
 
 .subtitle {
-  font-size: 18px;
-  color: #666;
+  font-size: 20px;
+  color: #8b4513;
   margin-bottom: 20px;
 }
 
+/* Continue box styling */
 .continue-box {
   margin-bottom: 20px;
 }
 
 .continue-text {
-  font-size: 16px;
-  color: #666;
+  font-size: 18px;
+  color: #8b4513;
   margin-bottom: 10px;
 }
 
+/* Button styling */
 .button-container {
   display: flex;
   justify-content: center;
 }
 
 .google-button {
-  background-color: #4285F4;
+  background-color: #ff7043;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .google-button:hover {
-  background-color: #357ae8;
+  background-color: #ff5722;
 }
 
+/* Info text styling */
 .info-text {
-  font-size: 14px;
-  color: #999;
+  font-size: 16px;
+  color: #4a4a4a;
   text-align: center;
+  margin-top: 20px;
 }
+
 
 
 
