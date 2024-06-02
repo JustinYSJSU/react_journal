@@ -1,7 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #f5f5f5;
+  color: #333;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,9 +11,9 @@ body {
 }
 
 .journal-container {
-  background-color: #1e1e1e;
+  background-color: #ffd1dc;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   padding: 20px;
   text-align: center;
@@ -22,16 +22,16 @@ body {
 .journal-header h1 {
   margin: 0;
   font-size: 24px;
-  color: #ffffff;
+  color: #333;
 }
 
 .journal-header p, .journal-footer p {
   margin: 10px 0 0;
-  color: #b0b0b0;
+  color: #555;
 }
 
 .google-signin-btn {
-  background-color: #4285F4;
+  background-color: #ff7373;
   color: white;
   border: none;
   border-radius: 4px;
@@ -42,8 +42,9 @@ body {
 }
 
 .google-signin-btn:hover {
-  background-color: #357ae8;
+  background-color: #ff4d4d;
 }
+
 
 
 
