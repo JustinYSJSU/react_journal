@@ -10,11 +10,7 @@
 - Typescript / JSX
 - CSS
 - Google Firebase / Firestore
-- Vercel 
-
-## Using JOURNAL 
-JOURNAL can be accessed with [this link](https://react-journal-kohl.vercel.app/). You will need a google account to login and save your entries. 
-After logging in, follow the directions show on the home page. 
-
+- Vercel
+  
 ## Credits
 - Justin Yamamoto (@JustinYSJSU) 
